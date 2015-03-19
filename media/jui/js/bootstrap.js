@@ -1,5 +1,5 @@
 /* ===================================================
- * bootstrap-transition.js v2.3.2
+ * bootstrap-transition.js v2.3.0
  * http://twitter.github.com/bootstrap/javascript.html#transitions
  * ===================================================
  * Copyright 2012 Twitter, Inc.
@@ -17,9 +17,6 @@
  * limitations under the License.
  * ========================================================== */
 
- /**
-  * Custom version for Joomla!
-  */
 
 !function ($) {
 
@@ -61,7 +58,7 @@
   })
 
 }(window.jQuery);/* ==========================================================
- * bootstrap-alert.js v2.3.2
+ * bootstrap-alert.js v2.3.0
  * http://twitter.github.com/bootstrap/javascript.html#alerts
  * ==========================================================
  * Copyright 2012 Twitter, Inc.
@@ -159,7 +156,7 @@
   $(document).on('click.alert.data-api', dismiss, Alert.prototype.close)
 
 }(window.jQuery);/* ============================================================
- * bootstrap-button.js v2.3.2
+ * bootstrap-button.js v2.3.0
  * http://twitter.github.com/bootstrap/javascript.html#buttons
  * ============================================================
  * Copyright 2012 Twitter, Inc.
@@ -263,7 +260,7 @@
   })
 
 }(window.jQuery);/* ==========================================================
- * bootstrap-carousel.js v2.3.2
+ * bootstrap-carousel.js v2.3.0
  * http://twitter.github.com/bootstrap/javascript.html#carousel
  * ==========================================================
  * Copyright 2012 Twitter, Inc.
@@ -339,7 +336,7 @@
       if (!e) this.paused = true
       if (this.$element.find('.next, .prev').length && $.support.transition.end) {
         this.$element.trigger($.support.transition.end)
-        this.cycle(true)
+        this.cycle()
       }
       clearInterval(this.interval)
       this.interval = null
@@ -469,7 +466,7 @@
   })
 
 }(window.jQuery);/* =============================================================
- * bootstrap-collapse.js v2.3.2
+ * bootstrap-collapse.js v2.3.0
  * http://twitter.github.com/bootstrap/javascript.html#collapse
  * =============================================================
  * Copyright 2012 Twitter, Inc.
@@ -545,13 +542,7 @@
       if (this.transitioning || !this.$element.hasClass('in')) return
       dimension = this.dimension()
       this.reset(this.$element[dimension]())
-	  // JOOMLA JUI >>>
-	  /* ORIGINAL:
       this.transition('removeClass', $.Event('hide'), 'hidden')
-      */
-      this.transition('removeClass', $.Event('hideme'), 'hidden')
-      // < Joomla JUI
-
       this.$element[dimension](0)
     }
 
@@ -640,9 +631,8 @@
     $(target).collapse(option)
   })
 
-}(window.jQuery);
-/* ============================================================
- * bootstrap-dropdown.js v2.3.2
+}(window.jQuery);/* ============================================================
+ * bootstrap-dropdown.js v2.3.0
  * http://twitter.github.com/bootstrap/javascript.html#dropdowns
  * ============================================================
  * Copyright 2012 Twitter, Inc.
@@ -672,13 +662,7 @@
   var toggle = '[data-toggle=dropdown]'
     , Dropdown = function (element) {
         var $el = $(element).on('click.dropdown.data-api', this.toggle)
-        // JOOMLA JUI >>>
-          .on('mouseover.dropdown.data-api', this.toggle)
-        // < Joomla JUI
         $('html').on('click.dropdown.data-api', function () {
-          // JOOMLA JUI >>>
-          $el.parent().parent().removeClass('nav-hover')
-          // < Joomla JUI
           $el.parent().removeClass('open')
         })
       }
@@ -688,50 +672,21 @@
     constructor: Dropdown
 
   , toggle: function (e) {
-      // JOOMLA JUI >>>
-      /* ORIGINAL
       var $this = $(this)
         , $parent
         , isActive
-      */
-      var $this = $(this)
-        , $parent
-        , isActive
-        , url
-        , isHover
-      // < Joomla JUI
 
       if ($this.is('.disabled, :disabled')) return
 
       $parent = getParent($this)
 
       isActive = $parent.hasClass('open')
-      // JOOMLA JUI >>>
-      isHover = $parent.parent().hasClass('nav-hover')
-      if(!isHover && e.type == 'mouseover') return
-      // < Joomla JUI
-
-      url = $this.attr('href')
-      if (e.type == 'click' && (url) && (url !== '#')) {
-         window.location = url
-         return
-      }
 
       clearMenus()
 
-      // JOOMLA JUI >>>
-      if ((!isActive && e.type != 'mouseover') || (isHover && e.type == 'mouseover')) {
-        if ('ontouchstart' in document.documentElement) {
-          // if mobile we we use a backdrop because click events don't delegate
-          $('<div class="dropdown-backdrop"/>').insertBefore($(this)).on('click', clearMenus)
-          $this.on('hover', function () {
-            $('.dropdown-backdrop').remove()
-          });
-        }
-        $parent.parent().toggleClass('nav-hover');
+      if (!isActive) {
         $parent.toggleClass('open')
       }
-      // < Joomla JUI
 
       $this.focus()
 
@@ -782,10 +737,6 @@
   }
 
   function clearMenus() {
-    // JOOMLA JUI >>>
-    $(toggle).parent().parent().removeClass('nav-hover')
-    // < Joomla JUI
-    $('.dropdown-backdrop').remove()
     $(toggle).each(function () {
       getParent($(this)).removeClass('open')
     })
@@ -840,14 +791,13 @@
   $(document)
     .on('click.dropdown.data-api', clearMenus)
     .on('click.dropdown.data-api', '.dropdown form', function (e) { e.stopPropagation() })
+    .on('.dropdown-menu', function (e) { e.stopPropagation() })
     .on('click.dropdown.data-api'  , toggle, Dropdown.prototype.toggle)
     .on('keydown.dropdown.data-api', toggle + ', [role=menu]' , Dropdown.prototype.keydown)
-    // JOOMLA JUI >>>
-    .on('mouseover.dropdown.data-api', toggle, Dropdown.prototype.toggle)
-    // < Joomla JUI
+
 }(window.jQuery);
 /* =========================================================
- * bootstrap-modal.js v2.3.2
+ * bootstrap-modal.js v2.3.0
  * http://twitter.github.com/bootstrap/javascript.html#modals
  * =========================================================
  * Copyright 2012 Twitter, Inc.
@@ -996,7 +946,7 @@
       }
 
     , removeBackdrop: function () {
-        this.$backdrop && this.$backdrop.remove()
+        this.$backdrop.remove()
         this.$backdrop = null
       }
 
@@ -1094,7 +1044,7 @@
 
 }(window.jQuery);
 /* ===========================================================
- * bootstrap-tooltip.js v2.3.2
+ * bootstrap-tooltip.js v2.3.0
  * http://twitter.github.com/bootstrap/javascript.html#tooltips
  * Inspired by the original jQuery.tipsy by Jason Frame
  * ===========================================================
@@ -1175,15 +1125,7 @@
     }
 
   , enter: function (e) {
-      var defaults = $.fn[this.type].defaults
-        , options = {}
-        , self
-
-      this._options && $.each(this._options, function (key, value) {
-        if (defaults[key] != value) options[key] = value
-      }, this)
-
-      self = $(e.currentTarget)[this.type](options).data(this.type)
+      var self = $(e.currentTarget)[this.type](this._options).data(this.type)
 
       if (!self.options.delay || !self.options.delay.show) return self.show()
 
@@ -1316,16 +1258,9 @@
     }
 
   , hide: function () {
-	  // JOOMLA JUI >>>
-	  /* ORIGINAL:
       var that = this
         , $tip = this.tip()
         , e = $.Event('hide')
-      */
-      var that = this
-        , $tip = this.tip()
-        , e = $.Event('hideme')
-      // < Joomla JUI
 
       this.$element.trigger(e)
       if (e.isDefaultPrevented()) return
@@ -1447,12 +1382,7 @@
   , trigger: 'hover focus'
   , title: ''
   , delay: 0
-  // JOOMLA JUI >>>
-  /* ORIGINAL:
   , html: false
-  */
-  , html: true
-  // < Joomla JUI
   , container: false
   }
 
@@ -1467,7 +1397,7 @@
 
 }(window.jQuery);
 /* ===========================================================
- * bootstrap-popover.js v2.3.2
+ * bootstrap-popover.js v2.3.0
  * http://twitter.github.com/bootstrap/javascript.html#popovers
  * ===========================================================
  * Copyright 2012 Twitter, Inc.
@@ -1581,7 +1511,7 @@
 
 }(window.jQuery);
 /* =============================================================
- * bootstrap-scrollspy.js v2.3.2
+ * bootstrap-scrollspy.js v2.3.0
  * http://twitter.github.com/bootstrap/javascript.html#scrollspy
  * =============================================================
  * Copyright 2012 Twitter, Inc.
@@ -1742,7 +1672,7 @@
   })
 
 }(window.jQuery);/* ========================================================
- * bootstrap-tab.js v2.3.2
+ * bootstrap-tab.js v2.3.0
  * http://twitter.github.com/bootstrap/javascript.html#tabs
  * ========================================================
  * Copyright 2012 Twitter, Inc.
@@ -1885,7 +1815,7 @@
   })
 
 }(window.jQuery);/* =============================================================
- * bootstrap-typeahead.js v2.3.2
+ * bootstrap-typeahead.js v2.3.0
  * http://twitter.github.com/bootstrap/javascript.html#typeahead
  * =============================================================
  * Copyright 2012 Twitter, Inc.
@@ -2220,7 +2150,7 @@
 
 }(window.jQuery);
 /* ==========================================================
- * bootstrap-affix.js v2.3.2
+ * bootstrap-affix.js v2.3.0
  * http://twitter.github.com/bootstrap/javascript.html#affix
  * ==========================================================
  * Copyright 2012 Twitter, Inc.

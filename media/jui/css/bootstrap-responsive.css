@@ -1,5 +1,5 @@
 /*!
- * Bootstrap Responsive v2.3.2
+ * Bootstrap Responsive v2.3.0
  *
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
@@ -881,6 +881,20 @@
   .controls-row [class*="span"] + [class*="span"] {
     margin-left: 0;
   }
+  .modal {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    width: auto;
+    margin: 0;
+  }
+  .modal.fade {
+    top: -100px;
+  }
+  .modal.fade.in {
+    top: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -920,6 +934,11 @@
   .media-object {
     margin-right: 0;
     margin-left: 0;
+  }
+  .modal {
+    top: 10px;
+    right: 10px;
+    left: 10px;
   }
   .modal-header .close {
     padding: 10px;

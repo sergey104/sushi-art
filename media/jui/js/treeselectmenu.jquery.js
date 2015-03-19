@@ -1,5 +1,5 @@
 /**
- * @copyright  Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
+ * @copyright  Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 jQuery(function($)
@@ -51,23 +51,15 @@ jQuery(function($)
 	$('#treeselectfilter').keyup(function()
 	{
 		var text = $(this).val().toLowerCase();
-		var hidden = 0;
-		$("#noresultsfound").hide();
-		var $list_elements = $('.treeselect li');
-		$list_elements.each(function()
+		$('.treeselect li').each(function()
 		{
 			if ($(this).text().toLowerCase().indexOf(text) == -1) {
 				$(this).hide();
-				hidden++;
 			}
 			else {
 				$(this).show();
 			}
 		});
-		if(hidden == $list_elements.length)
-		{
-			$("#noresultsfound").show();
-		}
 	});
 
 	// Checks all checkboxes the tree
@@ -95,27 +87,30 @@ jQuery(function($)
 		$('ul.treeselect ul.treeselect-sub').hide();
 		$('ul.treeselect i.treeselect-toggle').removeClass('icon-minus').addClass('icon-plus');
 	});
+
 	// Take care of children check/uncheck all
 	$('a.checkall').click(function()
 	{
-		$(this).parents().eq(5).find('ul.treeselect-sub input').attr('checked', 'checked');
+		$(this).parent().parent().parent().parent().parent().parent().find('ul.treeselect-sub input').attr('checked', 'checked');
 	});
 	$('a.uncheckall').click(function()
 	{
-		$(this).parents().eq(5).find('ul.treeselect-sub input').attr('checked', false);
+		$(this).parent().parent().parent().parent().parent().parent().find('ul.treeselect-sub input').attr('checked', false);
 	});
 
 	// Take care of children toggle all
 	$('a.expandall').click(function()
 	{
-		var $parent = $(this).parents().eq(6);
+		$parent = $(this).parent().parent().parent().parent().parent().parent().parent();
 		$parent.find('ul.treeselect-sub').show();
 		$parent.find('ul.treeselect-sub i.treeselect-toggle').removeClass('icon-plus').addClass('icon-minus');
+		;
 	});
 	$('a.collapseall').click(function()
 	{
-		var $parent = $(this).parents().eq(6);
+		$parent = $(this).parent().parent().parent().parent().parent().parent().parent();
 		$parent.find('li ul.treeselect-sub').hide();
 		$parent.find('li i.treeselect-toggle').removeClass('icon-minus').addClass('icon-plus');
+		;
 	});
 });
