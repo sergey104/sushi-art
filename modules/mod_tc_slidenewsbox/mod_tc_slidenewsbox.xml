@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>News box Slider</name>
+	<author>themescreative</author>
+	<creationDate>Sep 25, 2012</creationDate>
+	<copyright>Copyright (C) http://www.themescreative.com. All rights reserved.</copyright>
+	<license>themescreative</license>
+	<authorEmail>support@themescreative.com</authorEmail>
+	<authorUrl>www.themescreative.com</authorUrl>
+	<version>3.0.5</version>
+	<description>	
+	<![CDATA[
+	<h1>News box Slider</h1>
+	<div style="margin:0 0 0 10px; font-size:15px;">News box Slider module from <a href="http://www.themescreative.com" target="_blank">themescreative.com</a></div>
+	<br/>
+		]]></description>
+
+	<files>
+		<filename module="mod_tc_slidenewsbox">mod_tc_slidenewsbox.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>mod_tc_slidenewsbox.xml</filename>
+		<folder>assets</folder>
+		<folder>helper</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<config>
+		<fields name="params" addfieldpath="modules/mod_tc_slidenewsbox/helper/formfield">
+			<fieldset name="slidermanager" label="News box Manager">
+								
+				<field name="slides" type="judyno" path="modules/mod_tc_slidenewsbox/helper/" showpreview="yes" label="News box Manager" itemnname="News"> 
+					<option name="vals" type="hidden" value="" />
+					<option name="img" type="media" value="" label="Browse for image" />
+					<option name="name" type="text" value="" class="input-xlarge" label="Name" />
+					<option name="title" type="text" value="" class="input-xlarge" label="Main Title" />
+					<option name="decs" type="text" value="" class="input-xlarge" label="Text Description" />
+					<option name="read_more" type="text" value="read more" class="input-xlarge" label="Read More text" />
+					<option name="co_txt" type="text" value="" class="input-xlarge" label="Text color" />	
+					<option name="co_bgr" type="text" value="" class="input-xlarge" label="Bacground color" />				
+					<option name="url" type="texturl" value="" class="input-xlarge" label="Read More Link URL" target="_self" description="Here add the url link and select the target window" />					
+				</field>
+				
+			</fieldset>
+			
+			<fieldset name="settings" label="General Settings">
+						
+				<field name="jqueryload" type="list" default="0" label="Load jquey script" description="Load jquey script only if it does not work">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>										
+				<field name="customone" type="list" default="1" label="Items to show" description="Items visible">
+					<option value="1">Auto</option>
+					<option value="0">One item per slide</option>
+				</field>
+				<field type="list" name="color" value="" class="input-xlarge" label="Over Color" description="Select a color" >
+					<option value="">default</option>
+					<option value="rgba(255,70,71,0.8)">Red</option>
+					<option value="rgba(51,153,204,0.8)">Blue</option>
+					<option value="rgba(153,204,51,0.8)">Green</option>
+					<option value="rgba(255,153,51,0.8)">Orange</option>
+					<option value="rgba(0,0,0,0.8)">Black</option>
+					<option value="rgba(153,153,153,0.8)">Grey</option>
+				</field>
+				<field name="container_fix" type="text" default="7" label="Item disatance" description="Disatance betwin each newsbox." />
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

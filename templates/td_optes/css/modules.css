@@ -1,0 +1,102 @@
+/*---------------------------------------------------------------
+# Package - Joomla Template based on Sboost Framework   
+# ---------------------------------------------------------------
+# Author - themescreative http://www.themescreative.com
+# Copyright (C) 2008 - 2013 themescreative.com. All Rights Reserved.
+# Websites: http://www.themescreative.com
+-----------------------------------------------------------------*/
+
+/*Module type TD_XHTML*/
+
+.light {
+	color: #333;
+	background-color: #fff;
+	margin: 0 auto 5px auto;
+	border: 1px solid #f1f1f1;
+	padding: 5px 10px;
+}
+.light:hover {
+	color: #333;
+	background-color: #f9f9f9;
+}
+.beige {
+	color: #000;
+	background-color: #f9f4ed;
+	margin: 0 auto 5px auto;
+	padding: 5px 10px;
+}
+
+.grey {
+	color: #333;
+	background-color: #f9f9f9;
+	margin: 0 auto 5px auto;
+	padding: 5px 10px;
+	border: 1px solid #f1f1f1;
+}
+.grey:hover {
+	color: #333;
+	background-color: #f1f1f1;
+}
+.red {
+	color: #f1f1f1;
+	margin: 0 auto 5px auto;
+	background-color: #cc3333;
+	padding: 5px 10px;
+}
+.blue {
+	color: #f1f1f1;
+	margin: 0 auto 5px auto;
+	background-color: #3266ad;
+	padding: 5px 10px;
+}
+.green {
+	color: #f1f1f1;
+	margin: 0 auto 5px auto;
+	background-color: #99cc33;
+	padding: 5px 10px;
+}
+.orange {
+	color: #f1f1f1;
+	margin: 0 auto 5px auto;
+	background-color: #f57900;
+	padding: 5px 10px;
+}
+
+.colors {
+	color: #222;
+	margin: 0 auto 5px auto;
+	padding: 5px;
+}
+
+.dark {
+	background-color: #444;
+	margin: 0 auto 5px auto;
+	color: #ddd;
+	padding: 5px 10px;
+}
+.dark ul, .mcolor ul, .white ul {
+	padding-left: 5px;
+}
+
+.dark a { color: #ddd !important; text-decoration: underline;}
+
+.colors {
+	background-color: #a377e0;
+	margin: 0 auto 5px auto;
+	color: #ddd;
+	padding: 5px 10px;
+}
+
+.colors, .orange, .green, .blue, .red, .grey, .beige, .light, .dark {
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.colors:hover, .orange:hover, .green:hover, .blue:hover, .red:hover, .grey:hover, .beige:hover, .light:hover, .dark:hover {
+	transform:translateY(-5px);
+	-o-transform:translateY(-5px);
+	-ms-transform:translateY(-5px);
+	-webkit-transform:translateY(-5px)}}

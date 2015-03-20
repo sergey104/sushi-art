@@ -1,0 +1,452 @@
+.pane-sliders .panel { 
+	border: none !important; 
+	font-family:arial;	
+}
+.pane-sliders .panel > h3 {
+	background:url(../images/header-bg.gif) repeat-x!important;
+	height:37px;
+	line-height:37px;
+	padding:0;
+}
+.pane-sliders .panel h3 span{
+	text-transform:uppercase;
+	color:#1d5a80;
+}
+
+.pane-toggler-down {
+	border-bottom:none!important;
+}
+.pane-toggler-down span {
+    background: url("../images/arrow-down.gif") no-repeat scroll 8px 50% transparent!important;
+    padding-left: 26px!important;
+}
+.pane-toggler span {
+    background: url("../images/arrow-up.gif") no-repeat scroll 10px 50% transparent!important;
+    padding-left: 26px!important;
+}
+.pane-sliders .panel{
+	border:1px solid #cacaca!important;
+	border-top:1px solid #1d5a80!important;
+	border-radius:5px 5px 5px 5px;
+	padding:0 1px;
+
+}
+fieldset.panelform{
+	padding:10px!important;
+}
+fieldset.panelform li > label, fieldset.panelform div.paramrow label, fieldset.panelform span.faux-label {
+    max-width: 30% !important;
+    min-width: 30% !important;
+}
+fieldset.panelform .spacer h3{
+	padding-top:5px;
+	margin:0px;
+	background:#fff!important;
+}
+#jform_params_about-lbl{
+	display:none;
+}
+.panel fieldset.panelform > ul > li > label,
+.panel fieldset.panelform > ul > li .featured_box label {
+    color: #505050;
+    font-size: 11px;
+    font-weight: bold;
+    max-width: 30% !important;
+    min-width: 30% !important;
+    text-align: left;
+}
+.panel fieldset.panelform > ul > li > select,
+.panel fieldset.panelform > ul > li select.styled {
+outline: 0 none; padding: 6px; -webkit-border-radius: 4px;-moz-border-radius:4px;border-radius: 4px; border: 1px solid #AAA;
+}
+.fltrt ul.adminformlist li { border-bottom: 1px solid #EEE; margin: 0; padding: 5px;}
+.fltrt ul.adminformlist li .spacer hr { background:url(../images/ptn.png)  #eee; border: 0; height: 10px; }
+.fltrt ul.adminformlist li .spacer > span.text label { line-height:20px; min-width:100%; max-width:100%; font-size:16px; color:#036; }
+.fltrt ul.adminformlist li .smaller {width:200px;}
+
+/* Fix chosen*/
+.chzn-container  ul.chzn-results{
+	min-width:95%;
+}
+
+.fltrt ul.adminformlist li  li{
+    border-bottom: none;
+	min-height:0;
+	line-height: 80%;
+	padding: 7px 7px 8px;
+	margin: 0;
+	list-style: none;
+}
+
+fieldset.adminform fieldset.radio, fieldset.panelform fieldset.radio, fieldset.adminform-legacy fieldset.radio {
+    border: 0 none;
+    float: left;
+    margin: 0 0 5px;
+	max-width: 68% !important;
+    min-width: 68% !important;
+    padding: 0;
+}
+fieldset.panelform input[type=text],fieldset.panelform textarea {
+    background:-moz-linear-gradient(center bottom , white 85%, #EEEEEE 99%) repeat scroll 0 0 transparent;
+    border: 1px solid #AAAAAA;
+    font-family: sans-serif;
+	font-size:11px;
+    margin: 1px 0;
+    outline: 0 none;
+    padding: 6px 20px 6px 5px;
+	 -webkit-border-radius: 4px;-moz-border-radius:4px;border-radius: 4px; 
+}
+
+.smallfield {width:60px}
+.mediumfield {width:250px;}
+.longfield {width:400px;}
+
+ul.adminformlist li:before,
+ul.adminformlist li:after,
+.clearfix:before,
+.clearfix:after {content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0;height: 0; }
+.clearfix:after,
+ul.adminformlist li:after  {clear: both; }
+ul.adminformlist li,
+.clearfix {zoom: 1; }
+
+.featured_box  .fld {margin:4px 0;}
+/* @group Base */
+select.ju-select {
+  visibility: hidden;
+  height: 28px !important;
+  min-height: 28px !important;
+}
+.ju-container {
+  font-size: 11px;
+  position: relative;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.ju-container .ju-drop {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-top: 0;
+  position: absolute;
+  top: 29px;
+  left: 0;
+  -webkit-box-shadow: 0 4px 5px rgba(0,0,0,.15);
+  -moz-box-shadow   : 0 4px 5px rgba(0,0,0,.15);
+  -o-box-shadow     : 0 4px 5px rgba(0,0,0,.15);
+  box-shadow        : 0 4px 5px rgba(0,0,0,.15);
+  z-index: 999;
+}
+/* @end */
+
+/* @group Single Chosen */
+.ju-container-single .ju-single {
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eeeeee), color-stop(0.5, white));
+  background-image: -webkit-linear-gradient(center bottom, #eeeeee 0%, white 50%);
+  background-image: -moz-linear-gradient(center bottom, #eeeeee 0%, white 50%);
+  background-image: -o-linear-gradient(top, #eeeeee 0%,#ffffff 50%);
+  background-image: -ms-linear-gradient(top, #eeeeee 0%,#ffffff 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=0 );
+  background-image: linear-gradient(top, #eeeeee 0%,#ffffff 50%);
+  -webkit-border-radius: 4px;
+  -moz-border-radius   : 4px;
+  border-radius        : 4px;
+  -moz-background-clip   : padding;
+  -webkit-background-clip: padding-box;
+  background-clip        : padding-box;
+  border: 1px solid #aaa;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 0 0 8px;
+  color: #444;
+  text-decoration: none;
+}
+.ju-container-single .ju-single span {
+  margin-right: 26px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.ju-container-single .ju-single div {
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius   : 0 4px 4px 0;
+  border-radius        : 0 4px 4px 0;
+  -moz-background-clip   : padding;
+  -webkit-background-clip: padding-box;
+  background-clip        : padding-box;
+  background: #ccc;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ccc), color-stop(0.6, #eee));
+  background-image: -webkit-linear-gradient(center bottom, #ccc 0%, #eee 60%);
+  background-image: -moz-linear-gradient(center bottom, #ccc 0%, #eee 60%);
+  background-image: -o-linear-gradient(bottom, #ccc 0%, #eee 60%);
+  background-image: -ms-linear-gradient(top, #cccccc 0%,#eeeeee 60%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=0 );
+  background-image: linear-gradient(top, #cccccc 0%,#eeeeee 60%);
+  border-left: 1px solid #aaa;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: 18px;
+}
+.ju-container-single .ju-single div b {
+  background: url('../images/chosen-sprite.png') no-repeat 0 1px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.ju-container-single .ju-search {
+  padding: 3px 4px;
+  margin: 0;
+  white-space: nowrap;
+}
+.ju-container-single .ju-search input {
+  background: #fff url('../images/chosen-sprite.png') no-repeat 100% -20px;
+  background: url('../images/chosen-sprite.png') no-repeat 100% -20px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
+  background: url('../images/chosen-sprite.png') no-repeat 100% -20px, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+  background: url('../images/chosen-sprite.png') no-repeat 100% -20px, -moz-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+  background: url('../images/chosen-sprite.png') no-repeat 100% -20px, -o-linear-gradient(bottom, white 85%, #eeeeee 99%);
+  background: url('../images/chosen-sprite.png') no-repeat 100% -20px, -ms-linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+  background: url('../images/chosen-sprite.png') no-repeat 100% -20px, -ms-linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+  background: url('../images/chosen-sprite.png') no-repeat 100% -20px, linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+  margin: 1px 0;
+  padding: 4px 20px 4px 5px;
+  outline: 0;
+  border: 1px solid #aaa;
+  font-family: sans-serif;
+  font-size: 1em;
+}
+.ju-container-single .ju-drop {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius   : 0 0 4px 4px;
+  border-radius        : 0 0 4px 4px;
+  -moz-background-clip   : padding;
+  -webkit-background-clip: padding-box;
+  background-clip        : padding-box;
+}
+/* @end */
+
+/* @group Multi Chosen */
+.ju-container-multi .ju-choices {
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
+  background-image: -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+  background-image: -moz-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+  background-image: -o-linear-gradient(bottom, white 85%, #eeeeee 99%);
+  background-image: -ms-linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 );
+  background-image: linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+  border: 1px solid #aaa;
+  margin: 0;
+  padding: 0;
+  cursor: text;
+  overflow: hidden;
+  height: auto !important;
+  height: 1%;
+  position: relative;
+}
+.ju-container-multi .ju-choices li {
+  float: left;
+  list-style: none;
+}
+.ju-container-multi .ju-choices .search-field {
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+.ju-container-multi .ju-choices .search-field input {
+  color: #666;
+  background: transparent !important;
+  border: 0 !important;
+  padding: 5px;
+  margin: 1px 0;
+  outline: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow   : none;
+  -o-box-shadow     : none;
+  box-shadow        : none;
+}
+.ju-container-multi .ju-choices .search-field .default {
+  color: #999;
+}
+.ju-container-multi .ju-choices .search-choice {
+  -webkit-border-radius: 3px;
+  -moz-border-radius   : 3px;
+  border-radius        : 3px;
+  -moz-background-clip   : padding;
+  -webkit-background-clip: padding-box;
+  background-clip        : padding-box;
+  background-color: #e4e4e4;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e4e4e4), color-stop(0.7, #eeeeee));
+  background-image: -webkit-linear-gradient(center bottom, #e4e4e4 0%, #eeeeee 70%);
+  background-image: -moz-linear-gradient(center bottom, #e4e4e4 0%, #eeeeee 70%);
+  background-image: -o-linear-gradient(bottom, #e4e4e4 0%, #eeeeee 70%);
+  background-image: -ms-linear-gradient(top, #e4e4e4 0%,#eeeeee 70%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e4e4', endColorstr='#eeeeee',GradientType=0 );
+  background-image: linear-gradient(top, #e4e4e4 0%,#eeeeee 70%);
+  color: #333;
+  border: 1px solid #b4b4b4;
+  line-height: 13px;
+  padding: 3px 19px 3px 6px;
+  margin: 3px 0 3px 5px;
+  position: relative;
+}
+.ju-container-multi .ju-choices .search-choice span {
+  cursor: default;
+}
+.ju-container-multi .ju-choices .search-choice-focus {
+  background: #d4d4d4;
+}
+.ju-container-multi .ju-choices .search-choice .search-choice-close {
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 6px;
+  width: 8px;
+  height: 9px;
+  font-size: 1px;
+  background: url(../images/chosen-sprite.png) right top no-repeat;
+}
+.ju-container-multi .ju-choices .search-choice .search-choice-close:hover {
+  background-position: right -9px;
+}
+.ju-container-multi .ju-choices .search-choice-focus .search-choice-close {
+  background-position: right -9px;
+}
+/* @end */
+
+/* @group Results */
+.ju-container .ju-results {
+  margin: 0 4px 4px 0;
+  max-height: 190px;
+  padding: 0 0 0 4px;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.ju-container-multi .ju-results {
+  margin: -1px 0 0;
+  padding: 0;
+}
+.ju-container .ju-results li {
+  line-height: 80%;
+  padding: 7px 7px 8px;
+  margin: 0;
+  list-style: none;
+}
+.ju-container .ju-results .active-result {
+  cursor: pointer;
+}
+.ju-container .ju-results .highlighted {
+  background: #3875d7;
+  color: #fff;
+}
+.ju-container .ju-results li em {
+  background: #feffde;
+  font-style: normal;
+}
+.ju-container .ju-results .highlighted em {
+  background: transparent;
+}
+.ju-container .ju-results .no-results {
+  background: #f4f4f4;
+}
+.ju-container .ju-results .group-result {
+  cursor: default;
+  color: #999;
+  font-weight: bold;
+}
+.ju-container .ju-results .group-option {
+  padding-left: 20px;
+}
+.ju-container-multi .ju-drop .result-selected {
+  display: none;
+}
+/* @end */
+
+/* @group Active  */
+.ju-container-active .ju-single {
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,.3);
+  -moz-box-shadow   : 0 0 5px rgba(0,0,0,.3);
+  -o-box-shadow     : 0 0 5px rgba(0,0,0,.3);
+  box-shadow        : 0 0 5px rgba(0,0,0,.3);
+  border: 1px solid #5897fb;
+}
+.ju-container-active .ju-single-with-drop {
+  border: 1px solid #aaa;
+  -webkit-box-shadow: 0 1px 0 #fff inset;
+  -moz-box-shadow   : 0 1px 0 #fff inset;
+  -o-box-shadow     : 0 1px 0 #fff inset;
+  box-shadow        : 0 1px 0 #fff inset;
+  background-color: #eee;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, white), color-stop(0.5, #eeeeee));
+  background-image: -webkit-linear-gradient(center bottom, white 0%, #eeeeee 50%);
+  background-image: -moz-linear-gradient(center bottom, white 0%, #eeeeee 50%);
+  background-image: -o-linear-gradient(bottom, white 0%, #eeeeee 50%);
+  background-image: -ms-linear-gradient(top, #ffffff 0%,#eeeeee 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 );
+  background-image: linear-gradient(top, #ffffff 0%,#eeeeee 50%);
+  -webkit-border-bottom-left-radius : 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius-bottomleft : 0;
+  -moz-border-radius-bottomright: 0;
+  border-bottom-left-radius : 0;
+  border-bottom-right-radius: 0;
+}
+.ju-container-active .ju-single-with-drop div {
+  background: transparent;
+  border-left: none;
+}
+.ju-container-active .ju-single-with-drop div b {
+  background-position: -18px 1px;
+}
+.ju-container-active .ju-choices {
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,.3);
+  -moz-box-shadow   : 0 0 5px rgba(0,0,0,.3);
+  -o-box-shadow     : 0 0 5px rgba(0,0,0,.3);
+  box-shadow        : 0 0 5px rgba(0,0,0,.3);
+  border: 1px solid #5897fb;
+}
+.ju-container-active .ju-choices .search-field input {
+  color: #111 !important;
+}
+/* @end */
+
+/* @group Right to Left */
+.ju-rtl { direction:rtl;text-align: right; }
+.ju-rtl .ju-single { padding-left: 0; padding-right: 8px; }
+.ju-rtl .ju-single span { margin-left: 26px; margin-right: 0; }
+.ju-rtl .ju-single div { 
+  left: 0; right: auto; 
+  border-left: none; border-right: 1px solid #aaaaaa;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius   : 4px 0 0 4px;
+  border-radius        : 4px 0 0 4px; 
+}
+.ju-rtl .ju-choices li { float: right; }
+.ju-rtl .ju-choices .search-choice { padding: 3px 6px 3px 19px; margin: 3px 5px 3px 0; }
+.ju-rtl .ju-choices .search-choice .search-choice-close { left: 5px; right: auto; background-position: right top;}
+.ju-rtl.ju-container-single .ju-results { margin-left: 4px; margin-right: 0; padding-left: 0; padding-right: 4px; }
+.ju-rtl .ju-results .group-option { padding-left: 0; padding-right: 20px; }
+.ju-rtl.ju-container-active .ju-single-with-drop div { border-right: none; }
+.ju-rtl .ju-search input {
+  background: url('../images/chosen-sprite.png') no-repeat -38px -20px, #ffffff;
+  background: url('../images/chosen-sprite.png') no-repeat -38px -20px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
+  background: url('../images/chosen-sprite.png') no-repeat -38px -20px, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);  
+  background: url('../images/chosen-sprite.png') no-repeat -38px -20px, -moz-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+  background: url('../images/chosen-sprite.png') no-repeat -38px -20px, -o-linear-gradient(bottom, white 85%, #eeeeee 99%);
+  background: url('../images/chosen-sprite.png') no-repeat -38px -20px, -ms-linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+  background: url('../images/chosen-sprite.png') no-repeat -38px -20px, -ms-linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+  background: url('../images/chosen-sprite.png') no-repeat -38px -20px, linear-gradient(top, #ffffff 85%,#eeeeee 99%);
+  padding: 4px 5px 4px 20px;
+}
+/* @end */

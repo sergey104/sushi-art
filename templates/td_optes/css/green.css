@@ -1,0 +1,128 @@
+a:hover{color: #99c24b;text-decoration: none !important;}
+
+.nav-pills>li.active>a,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus { color: #99c24b; }	
+
+.navbar-nav a:hover, ul.nav-child > li.active > a, ul.nav-child li.current > a { color:#99c24b !important;}
+
+.breadcrumb  a:hover{color:#99c24b !important;}
+.go-top:hover{background-color: rgba(255, 255, 255, 0.50);border: #99c24b 1px solid;}
+
+.readon { color:#99c24b; }
+input#submitCommentButton
+{
+	background: #99c24b !important;
+	border: #99c24b 1px solid !important;
+	-webkit-border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	border-radius: 0px !important;
+	color: #ffffff !important;
+	display: inline-block !important;
+	margin-bottom: 0 !important;
+	margin-top:20px !important;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+
+li.minitags a 
+{
+	background: #99c24b;
+	border: #99c24b 1px solid;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 0px;
+	color: #ffffff !important;
+	display: inline-block;
+	margin-bottom: 0 ;
+	margin-top:20px ;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+	padding: 4px 10px ;
+	font-size: 12px ;
+	line-height: 14px ;
+}
+
+li.minitags a:hover 
+{
+	background-color: rgba(104, 181, 253, 0) !important;
+	color: #99c24b !important;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+	-webkit-border-radius: 2px !important;
+	-moz-border-radius: 2px !important;
+	border-radius: 2px !important;
+}
+
+.button:hover
+{
+	background-color: rgba(104, 181, 253, 0);
+	border: 1px solid #99c24b;
+	color: #99c24b !important;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+	-webkit-border-radius: 2px !important;
+	-moz-border-radius: 2px !important;
+	border-radius: 2px !important;
+}
+
+.featured
+{
+	background-color: rgba(104, 181, 253, 0);
+	border: 1px solid #99c24b;
+	color: #99c24b !important;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+	-webkit-border-radius: 2px !important;
+	-moz-border-radius: 2px !important;
+	border-radius: 2px !important;
+	float:right;
+	margin-top: 1.8em !important;
+}
+
+.button-negative:hover, .button
+{
+	background-color: #99c24b;
+	border: #99c24b 1px solid;
+	color: #ffffff !important;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+
+.article-info a:hover { color:#99c24b !important; }
+.label-info { background-color: #99c24b !important; }
+.label-info:hover { background: none !important; border: #99c24b 1px solid !important; color: #99c24b !important; }
+span.action-btn a:hover { color: #99c24b !important; }
+.pager li > a:hover { text-decoration: none; background: none !important; border-radius:2px !important; border: #99c24b 1px solid !important; color:#99c24b !important; }
+.pager li > a { text-decoration: none; background: #99c24b !important; border-radius:2px !important; border: #99c24b 1px solid !important; color:#ffffff !important; }
+.filter-search-lbl { color: #99c24b !important; font-size:14px !important; }
+.badge { padding: 10px !important; vertical-align: middle !important; background-color: #99c24b !important; border-radius:0 !important; }
+
+.panel-group .panel-title > a {
+  background-image: -webkit-linear-gradient(top, #99c24b 0%, #759a2f 100%);
+  background-image: linear-gradient(to bottom, #99c24b 0%, #759a2f 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99c24b', endColorstr='#759a2f', GradientType=0);
+}
+.tabs .nav-tabs > li.active > a {
+  color: #99c24b;
+}
+.tabs .nav-tabs > li.active > a:after {
+  background: #99c24b;
+}

@@ -1,0 +1,128 @@
+a:hover{color: #c00;text-decoration: none !important;}
+
+.nav-pills>li.active>a,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus { color: #c00; }	
+
+.navbar-nav a:hover, ul.nav-child > li.active > a, ul.nav-child li.current > a { color:#222 !important;}
+
+.breadcrumb  a:hover{color:#c00 !important;}
+.go-top:hover{background-color: rgba(255, 255, 255, 0.50);border: #c00 1px solid;}
+
+.readon { color:#c00; }
+input#submitCommentButton
+{
+	background: #c00 !important;
+	border: #c00 1px solid !important;
+	-webkit-border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	border-radius: 0px !important;
+	color: #ffffff !important;
+	display: inline-block !important;
+	margin-bottom: 0 !important;
+	margin-top:20px !important;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+
+li.minitags a 
+{
+	background: #c00;
+	border: #c00 1px solid;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 0px;
+	color: #ffffff !important;
+	display: inline-block;
+	margin-bottom: 0 ;
+	margin-top:20px ;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+	padding: 4px 10px ;
+	font-size: 12px ;
+	line-height: 14px ;
+}
+
+li.minitags a:hover 
+{
+	background-color: rgba(104, 181, 253, 0) !important;
+	color: #c00 !important;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+	-webkit-border-radius: 2px !important;
+	-moz-border-radius: 2px !important;
+	border-radius: 2px !important;
+}
+
+.button:hover
+{
+	background-color: rgba(104, 181, 253, 0);
+	border: 1px solid #c00;
+	color: #c00 !important;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+	-webkit-border-radius: 2px !important;
+	-moz-border-radius: 2px !important;
+	border-radius: 2px !important;
+}
+
+.featured
+{
+	background-color: rgba(104, 181, 253, 0);
+	border: 1px solid #c00;
+	color: #c00 !important;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+	-webkit-border-radius: 2px !important;
+	-moz-border-radius: 2px !important;
+	border-radius: 2px !important;
+	float:right;
+	margin-top: 1.8em !important;
+}
+
+.button-negative:hover, .button
+{
+	background-color: #c00;
+	border: #c00 1px solid;
+	color: #ffffff !important;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+
+.article-info a:hover { color:#c00 !important; }
+.label-info { background-color: #c00 !important; }
+.label-info:hover { background: none !important; border: #c00 1px solid !important; color: #c00 !important; }
+span.action-btn a:hover { color: #c00 !important; }
+.pager li > a:hover { text-decoration: none; background: none !important; border-radius:2px !important; border: #c00 1px solid !important; color:#c00 !important; }
+.pager li > a { text-decoration: none; background: #c00 !important; border-radius:2px !important; border: #c00 1px solid !important; color:#ffffff !important; }
+.filter-search-lbl { color: #c00 !important; font-size:14px !important; }
+.badge { padding: 10px !important; vertical-align: middle !important; background-color: #c00 !important; border-radius:0 !important; }
+
+.panel-group .panel-title > a {
+  background-image: -webkit-linear-gradient(top, #dc2a0b 0%, #c4250a 100%);
+  background-image: linear-gradient(to bottom, #dc2a0b 0%, #c4250a 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc2a0b', endColorstr='#c4250a', GradientType=0);
+}
+.tabs .nav-tabs > li.active > a {
+  color: #dc2a0b;
+}
+.tabs .nav-tabs > li.active > a:after {
+  background: #dc2a0b;
+}

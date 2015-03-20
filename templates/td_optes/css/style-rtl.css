@@ -1,0 +1,21 @@
+body{direction:rtl !important;}
+#wrapper{direction:rtl;}
+td-nav {float:left !important; direction:rtl !important;}
+.mobile-nav { float:left !important }
+.progress-bar {float: right !important }
+.sr-only {float:left !important}
+.addrow .addr { float: right !important; }
+addrow .adedit { float:right !important; }
+.featured { float:left !important; }
+span.rate {float:right !important;	text-align:right !important;}
+span.catItemDateModified { float:left !important; }
+div.catItemHitsBlock {  float:left !important; }
+.usertools ul { float:left !important; }
+.modified-bottom, .create-bottom { float:left !important; }
+.formlink ul.nav{float:right !important;}
+.dl-horizontal dt{text-align:right !important;}
+.form-horizontal .control-label {text-align:right !important;}
+.sidebar > .moduletable ul {margin-right: 0px !important;padding-right: 0px !important;}
+td-nav ul.nav-pills ul ul {
+right: 100% !important; }
+td-nav ul.nav-pills ul a:hover, td-nav ul.nav-pills ul span.nav-header:hover {margin-right:3px;}

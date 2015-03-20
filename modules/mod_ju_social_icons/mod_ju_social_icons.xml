@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7.0" client="site" method="upgrade">
+	<name>Social Icons Module</name>
+	<author>Joomla2you.com</author>
+	<creationDate>Jul 2011</creationDate>
+	<copyright>Copyright (C) 2010 - 2012 Joomla2you.com. All rights reserved.</copyright>
+	<license>GNU/GPL V2 for PHP files</license>
+	<authorEmail>support@joomla2you.com</authorEmail>
+	<authorUrl>www.joomla2you.com</authorUrl>
+	<version>2.9.3</version>
+	<description><![CDATA[
+	Social Icons Module with unlimited colors. For more info visit <a target="_blank" href="http://www.joomla2you.com">joomla2you.</a>.
+	]]></description>
+	<files>
+		<filename module="mod_ju_social_icons">mod_ju_social_icons.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_ju_social_icons.xml</filename>
+		<filename>helper.php</filename>
+		<folder>assets</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<help key="HG Social Icons Module" />
+	<config>
+		<fields name="params">
+			<fieldset addfieldpath="/modules/mod_ju_social_icons/assets/admin/formfield" name="basic">
+				<field type="asset" name="asset" path="/modules/mod_ju_social_icons/assets/admin/" />
+				
+				
+				<field name="icons_color" type="colorpicker" default="#FFFFFF" size="40" label="Icons Color" />
+				<field name="bg_type" default="1" type="radio" label="Background type" description="Choose if the icons should or should not have background.">
+					<option value="1">With Background</option>
+					<option value="0">Without Background</option>
+				</field>
+				<field name="icons_bg" type="colorpicker" default="#000000" size="40" label="Icons Background Color" description="Icons Background Color. This will be ignored if the option above is set to Witout Background !!" />
+				<field name="size" type="text" default="36" size="8" label="Font Size (px)" />
+				<field name="margin" type="text" default="3px" size="30" label="Icon margins (css)" description="For example 3px / 3px 5px / 2px 3px 4px 5px / The margins are set like TOP - RIGHT - BOTTOM - LEFT" />
+				
+				<field name="icons_colorize" default="1" type="radio" label="Icons Colorize" description="Choose if the icons should have their set color, on hover or in normal state.">
+					<option value="1">Hover state</option>
+					<option value="0">Normal state</option>
+				</field>
+				
+				<field name="icons_type" default="square" type="radio" label="Icons type" description="Choose whether they should be square or rounded.">
+					<option value="square">Square</option>
+					<option value="rounded">Rounded</option>
+				</field>
+				
+				<field name="target" type="list" default="_blank" label="Target" description="Choose to open the link in a new browser window or the same window">
+						<option value="_blank">New window</option>
+						<option value="_self">Same window</option>
+				</field>
+		
+				<field name="robots" type="radio" default="1" label="Include rel='nofollow'" description="Search Engines that support the rel='nofollow' attribute exclude these links from their ranking calculation">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+				</field>
+				
+				<field type="info" label="Icons"/>
+				
+				<field name="icon1" type="iconlist" label="Choose Icon" />
+				<field name="url1" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color1" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer1" type="spacer" label=" " class="withline" />
+				
+				<field name="icon2" type="iconlist" label="Choose Icon" />
+				<field name="url2" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color2" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer2" type="spacer" label=" " class="withline" />
+				
+				<field name="icon3" type="iconlist" label="Choose Icon" />
+				<field name="url3" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color3" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer3" type="spacer" label=" " class="withline" />
+				
+				<field name="icon4" type="iconlist" label="Choose Icon" />
+				<field name="url4" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color4" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer4" type="spacer" label=" " class="withline" />
+				
+				<field name="icon5" type="iconlist" label="Choose Icon" />
+				<field name="url5" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color5" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer5" type="spacer" label=" " class="withline" />
+				
+				<field name="icon6" type="iconlist" label="Choose Icon" />
+				<field name="url6" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color6" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer6" type="spacer" label=" " class="withline" />
+				
+				<field name="icon7" type="iconlist" label="Choose Icon" />
+				<field name="url7" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color7" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer7" type="spacer" label=" " class="withline" />
+				
+				<field name="icon8" type="iconlist" label="Choose Icon" />
+				<field name="url8" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color8" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer8" type="spacer" label=" " class="withline" />
+				
+				<field name="icon9" type="iconlist" label="Choose Icon" />
+				<field name="url9" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color9" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer9" type="spacer" label=" " class="withline" />
+				
+				<field name="icon10" type="iconlist" label="Choose Icon" />
+				<field name="url10" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color10" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer10" type="spacer" label=" " class="withline" />
+				
+				<field name="icon11" type="iconlist" label="Choose Icon" />
+				<field name="url11" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color11" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer11" type="spacer" label=" " class="withline" />
+				
+				<field name="icon12" type="iconlist" label="Choose Icon" />
+				<field name="url12" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color12" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer12" type="spacer" label=" " class="withline" />
+				
+				<field name="icon13" type="iconlist" label="Choose Icon" />
+				<field name="url13" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color13" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer13" type="spacer" label=" " class="withline" />
+				
+				<field name="icon14" type="iconlist" label="Choose Icon" />
+				<field name="url14" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color14" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer14" type="spacer" label=" " class="withline" />
+				
+				<field name="icon15" type="iconlist" label="Choose Icon" />
+				<field name="url15" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color15" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer15" type="spacer" label=" " class="withline" />
+				
+				<field name="icon16" type="iconlist" label="Choose Icon" />
+				<field name="url16" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color16" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer16" type="spacer" label=" " class="withline" />
+				
+				<field name="icon17" type="iconlist" label="Choose Icon" />
+				<field name="url17" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color17" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer17" type="spacer" label=" " class="withline" />
+				
+				<field name="icon18" type="iconlist" label="Choose Icon" />
+				<field name="url18" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color18" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer18" type="spacer" label=" " class="withline" />
+				
+				<field name="icon19" type="iconlist" label="Choose Icon" />
+				<field name="url19" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color19" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer19" type="spacer" label=" " class="withline" />
+				
+				<field name="icon20" type="iconlist" label="Choose Icon" />
+				<field name="url20" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color20" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer20" type="spacer" label=" " class="withline" />
+				
+				<field name="icon21" type="iconlist" label="Choose Icon" />
+				<field name="url21" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color21" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer21" type="spacer" label=" " class="withline" />
+				
+				<field name="icon22" type="iconlist" label="Choose Icon" />
+				<field name="url22" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color22" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer22" type="spacer" label=" " class="withline" />
+				
+				<field name="icon23" type="iconlist" label="Choose Icon" />
+				<field name="url23" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color23" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer23" type="spacer" label=" " class="withline" />
+				
+				<field name="icon24" type="iconlist" label="Choose Icon" />
+				<field name="url24" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color24" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer24" type="spacer" label=" " class="withline" />
+				
+				<field name="icon25" type="iconlist" label="Choose Icon" />
+				<field name="url25" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color25" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer25" type="spacer" label=" " class="withline" />
+				
+				<field name="icon26" type="iconlist" label="Choose Icon" />
+				<field name="url26" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color26" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer26" type="spacer" label=" " class="withline" />
+				
+				<field name="icon27" type="iconlist" label="Choose Icon" />
+				<field name="url27" type="text" default="" label="URL" description="Type the full URL including http://"/>
+				<field name="color27" type="colorpicker" default="" label="Hover Color" size="20"  />
+				<field name="spacer27" type="spacer" label=" " class="withline" />
+
+
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
