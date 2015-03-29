@@ -57,7 +57,7 @@ RewriteRule .* index.php [F]
 # Update Your Joomla! Directory (just / for root).
 ##
 
-RewriteBase /
+# RewriteBase /
 
 ## Begin - Joomla! core SEF Section.
 #
@@ -74,5 +74,3 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule .* index.php [L]
 #
 ## End - Joomla! core SEF Section.
-php_value upload_max_filesize 20M
-php_value post_max_size 20M
